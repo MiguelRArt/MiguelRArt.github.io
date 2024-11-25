@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+}
+
+/* Título */
+h1 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Mapa a pantalla completa */
+#map {
+    width: 100%;
+    height: 90vh; /* Ocupa toda la altura de la pantalla */
+    border-radius: 0; /* Quitar bordes para mejor integración */
+}
+
+/* Sección de investigación */
+#research-section {
+    width: 100%;
+    min-height: 100vh; /* Ocupa otra pantalla completa */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Separación sutil del mapa */
+    color: white;
+    flex-direction: column;
+}
+
+#research-section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+#research-section h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+    margin-bottom: 60px;
+}
+
+#research-section p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.644);
+    max-width: 50%; /* Restringir ancho del texto */
+    line-height: 1.6;    
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #research-section h2 {
+        font-size: 1.5rem;
+    }
+
+    #research-section p {
+        font-size: 0.9rem;
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    #research-section h2 {
+        font-size: 1.2rem;
+    }
+
+    #research-section p {
+        font-size: 0.8rem;
+        padding: 0 10px;
+        min-width: 80%;
+    }
+}
